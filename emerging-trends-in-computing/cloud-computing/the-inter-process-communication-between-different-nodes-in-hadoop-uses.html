@@ -22,9 +22,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The inter process communication between different nodes in Hadoop uses
 </title>
-<meta name="description" content="In Hadoop, interprocess communication between nodes in the system is implemented using remote procedure calls (RPCs). The RPC protocol uses serialization to render the message into a binary stream to be sent to the remote node, which then deserializes the binary stream into the original message.RPC encryption covers not only the channel between a client and a Hadoop cluster but also the inter-cluster communication among Hadoop services. Enable Encrypted RPC by setting the follwing properties in core-site. xml. hadoop.rpc.protection=privacy. (Also supported are the authentication and integrity settings.)The protocol used for communication between NameNode and DataNodes is RPC, and the protocol used for data transfer is HDFS over HTTP. HDFS checks: Hadoop natively provides the commands to verify the File System.All communication between Namenode and Datanode is initiated by the Datanode, and responded to by the Namenode. The Namenode never initiates communication to the Datanode, although Namenode responses may include commands to the Datanode that cause it to send further communications. ">
 <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'>
-<meta name="keywords" content="The inter process communication between different nodes in Hadoop uses">
 </head>
 <body data-rsssl="1" class="page-template-default custom-background custom-background-white custom-font-enabled single-author" style="padding: 0px 0px 154px;">
 <div id="page" class="site" style="height: auto !important;">
